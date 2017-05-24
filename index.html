@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie domowe z HTMLa - formularz zgłoszeniowy</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="main_box">
+        <form action="https://formspree.io/przemyslaw.rafa@gmail.com" method="POST">
+
+            <div id="name_box" class="form_box">
+                <label class="label" for="name">Imię</label>
+                <input class="input" id=name type="text" name="Imię">
+            </div>
+            
+            <div id="surname_box" class="form_box">
+                <label class="label" for="surname">Nazwisko</label>
+                <input class="input" id=surname type="text" name="Nazwisko">
+            </div>
+            
+            <div id="email_box" class="form_box">
+                <label class="label" for="email">Adres e-mail</label>
+                <input class="input" id=email type="email" name="Adres email">
+            </div>
+            
+            <div id="phone_box" class="form_box">
+                <label class="label" for="phone">Numer telefonu</label>
+                <input class="input" id=phone type="text" name="Numer telefonu">
+            </div>
+            
+            <div id="city_option" class="form_box">
+                <label class="label" for="city_list">Miasto:</label>
+                <select id="city_list" class="input" name="Miasto">
+                      <option value="Kraków">Kraków</option>
+                      <option value="Warszawa">Warszawa</option>
+                      <option value="Gdańsk">Gdańsk</option>
+                </select>
+            </div>
+            
+            <div id="sex_option" class="form_box">
+                <div id="radio_box">
+                    <p class="label">Płeć</p>
+                    <div class="input">
+                       <input class="gender" type="radio" name="gender" value="male"> Mężczyzna
+                       <input class="gender" type="radio" name="gender" value="female"> Kobieta</div>
+                    </div>
+            </div>
+
+            <div id="agree_box" class="form_box">
+                <label class="label" for="checkbox">Zgoda na przetwarzanie danych:</label>
+                <input class="input" id=checkbox type="checkbox" value="zgoda na przetwarzanie" name="Wyrażenie zgody">
+            </div>
+
+            <div id="message_box" class="form_box">
+                <label class="label" for="message">Wiadomość</label>
+                <textarea class="input" maxlength="400" id="message" name="Wiadmość"></textarea>
+            </div>
+            
+            <div class="form_box">
+                <input id="button_box" class="input" type="submit" value="Wyślij">
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
