@@ -2,16 +2,17 @@
 * {
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 2vw;
+    font-family: 'Lato', sans-serif;
 }
 
 /* Główny kontener */
 #main_box {
-    min-width: 550px;
+/*    min-width: 550px;*/
     max-width: 60vw;
     background-color: #cccccc;
     margin: auto;
-    padding: 20px;
+    padding: 2vw 3vw;
     left: 0;
     right: 0;
     box-sizing: border-box;
@@ -62,9 +63,18 @@
 .gender {
     margin-right: 5px;
     margin-left:  5px;
+    display: inline-block;
 }
 
-span {
+.gender_label {
     margin-left: 5px;
     margin-right: 15px;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 24px;
+    
 }
